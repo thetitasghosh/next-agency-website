@@ -7,8 +7,8 @@ import { Button } from '../ui/button';
 const ContactSection = () => {
   return (
     <div className="w-screen h-[35rem] p-2 flex flex-col items-center justify-start green">
-      <div className="w-full px-2">
-        <h1 className="text-2xl font-medium">Contact Us</h1>
+      <div className="w-full px-2 relative">
+        <h1 className="text-2xl font-medium border_bottom">Contact Us</h1>
       </div>
       <div className="w-full gap-3 text-black h-fit flex flex-col items-center justify-center red p-20 px-5">
         <Label htmlFor="name" className="text-black w-full px-1">
