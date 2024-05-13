@@ -1,10 +1,13 @@
-import React from 'react';
-import { Input } from '../ui/input';
-import { Label } from '../ui/label';
+"use client";
+import React from "react";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from '../ui/button';
+import { Button } from "../ui/button";
+import { useToast } from "@/lib/use-toast";
 
 const ContactSection = () => {
+  const { toast } = useToast();
   return (
     <div className="w-screen h-[35rem] p-2 flex flex-col items-center justify-start ">
       <div className="w-full px-2 relative">
@@ -37,10 +40,20 @@ const ContactSection = () => {
           id="message"
           className="border border-black"
         />
-        <Button className="w-full">Send message</Button>
+        <Button
+          onClick={() => {
+            toast({
+              title: "Hi",
+              description: "test",
+            });
+          }}
+          className="w-full"
+        >
+          Send message
+        </Button>
       </div>
     </div>
   );
-}
+};
 
 export default ContactSection;
