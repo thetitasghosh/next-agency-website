@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,6 +8,7 @@ import { useToast } from "@/lib/use-toast";
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [name, setName] = useState();
   return (
     <div className="w-screen h-[35rem] p-2 flex flex-col items-center justify-start ">
       <div className="w-full px-2 relative">
@@ -20,6 +21,8 @@ const ContactSection = () => {
         <Input
           type="text"
           id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           placeholder="Your Name"
           className="border border-black"
         />
@@ -43,8 +46,8 @@ const ContactSection = () => {
         <Button
           onClick={() => {
             toast({
-              title: "Hi",
-              description: "test",
+              title: "Welcome",
+              description: name || "test ",
             });
           }}
           className="w-full"
