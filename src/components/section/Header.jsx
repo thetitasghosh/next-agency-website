@@ -14,8 +14,8 @@ const Header = () => {
     }
   });
   return (
-    <div className="border z-10 w-full h-16 green flex items-center justify-between px-5 text-2xl fixed  text-black ">
-      <div className="logo mix-blend-difference font-extrabold  ">DB</div>
+    <div className="border z-10 w-full h-16 green flex items-center justify-between px-5 text-2xl fixed ">
+      <div className="logo mix-blend-difference font-extrabold  text-black z-[100]">DB</div>
       <div
         onClick={() => {
           setMenu(!menu);
