@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { IoMenu } from "react-icons/io5";
 import Nav from "@/components/section/Nav";
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -22,7 +22,7 @@ const Header = () => {
         }}
         className="menu  flex items-center justify-center red gap-1 z-30 "
       >
-        menu {menu ? <IoCloseSharp /> : <HiOutlineMenuAlt2 />}
+        menu {menu ? <IoCloseSharp /> : <IoMenu />}
       </div>
       {menu && <Nav />}
     </div>
