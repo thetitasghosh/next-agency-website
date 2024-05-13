@@ -17,17 +17,17 @@ const Header = () => {
   return (
     <div className="border z-10 w-full h-16  flex items-center justify-between px-5 text-2xl fixed ">
       <div className="logo mix-blend-difference font-extrabold  text-black z-[100]">
-        <Link href={'/'}> DB</Link>
+        <Link href={"/"}> DB</Link>
       </div>
       <div
         onClick={() => {
           setMenu(!menu);
         }}
-        className="menu  flex items-center justify-center  gap-1 z-30 cursor-pointer"
+        className="menu  flex items-center justify-center  gap-1 z-30 cursor-pointer text-3xl"
       >
         menu {menu ? <IoCloseSharp /> : <IoMenu />}
       </div>
-      {menu && <Nav />}
+      {menu && <Nav isClick={menu} />}
     </div>
   );
 };
