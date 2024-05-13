@@ -11,7 +11,7 @@ const ContactSection = () => {
         <h1 className="text-2xl font-medium">Contact Us</h1>
       </div>
       <div className="w-full gap-3 text-black h-fit flex flex-col items-center justify-center red p-20 px-5">
-        <Label htmlFor="name" className="text-black w-full px-2">
+        <Label htmlFor="name" className="text-black w-full px-1">
           Your Name
         </Label>
         <Input
@@ -20,7 +20,7 @@ const ContactSection = () => {
           placeholder="Your Name"
           className="border border-black"
         />
-        <Label htmlFor="email" className="text-black w-full px-2">
+        <Label htmlFor="email" className="text-black w-full px-1">
           Your Email
         </Label>
         <Input
@@ -29,7 +29,7 @@ const ContactSection = () => {
           placeholder="Your Email"
           className="border border-black"
         />
-        <Label htmlFor="message" className="text-black w-full px-2">
+        <Label htmlFor="message" className="text-black w-full px-1">
           Your message
         </Label>
         <Textarea
