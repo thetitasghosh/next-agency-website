@@ -4,7 +4,7 @@ import Card from "@/components/ui/card";
 const ServiceSection = () => {
   return (
     <div className="w-screen min-h-screen flex flex-col items-center justify-start green gap-5 p-2 ">
-      <div className="text-lg w-full px-2">
+      <div className="text-2xl font-medium w-full px-2">
         <h1>Service</h1>
       </div>
       <div className="flex min-h-screen items-center justify-center flex-col gap-5">
