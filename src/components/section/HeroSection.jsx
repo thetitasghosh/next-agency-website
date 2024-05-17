@@ -1,35 +1,29 @@
 import React from "react";
-import Abutton from '@/components/ui/Abutton'
+import Abutton from "@/components/ui/Abutton";
 import { Button } from "../ui/button";
-import Latest from '@/components/ui/Latest'
+import {socialIcon} from '@/data/navigation'
+import Latest from "@/components/ui/Latest";
 const HeroSection = () => {
   return (
     <>
       <div className="w-screen h-screen flex flex-col items-center gap-5 justify-start  py-16">
         <Abutton />
-        <div className="HeroHeader w-full h-36  flex items-center justify-center flex-col text-4xl ">
-          <h1 className="font-semibold">NGT SOFTWARE</h1>
-          <h1>A Creative Agency</h1>
-          <h1>For your need</h1>
-        </div>
-        <div className="w-full h-full  flex flex-col items-center justify-start gap-1">
-          <div className="HeroDesc w-full text-center h-20 text-base flex items-start justify-center   px-5">
-            <p className="leading-5">
-              We equip ambitious brands and organizations to lead from the front
-              through strategic positioning and thoughtful storytelling.
-            </p>
+        <div className="w-full h-40  flex items-center justify-evenly">
+          <div className="size-36  flex items-center justify-center rounded-full border border-black">
+            logo
           </div>
-          <div className="flex justify-evenly items-end w-full  ">
-            <Button>Contact</Button>
-            <Button
-              variant={"outline"}
-              className="border border-black font-semibold"
-            >
-              Enquiry
-            </Button>
+          <div className="flex flex-col items-center justify-evenly">
+            <h1 className="text-2xl font-bold">NGT SOFTWARE</h1>
+            <h1 className="text-xl font-medium">Digital Marketing Agency</h1>
           </div>
         </div>
-        <Latest />
+        <div className="w-full flex items-center justify-evenly h-16  text-black text-3xl">
+            {
+              socialIcon.map((data,idx)=>{
+                return <h1 key={idx}>{data.icon}</h1>
+              })
+            }
+        </div>
       </div>
     </>
   );
