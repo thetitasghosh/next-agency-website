@@ -3,7 +3,7 @@ import { service } from "@/data/serviceData";
 import Card from "@/components/ui/card";
 const ServiceSection = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center justify-start  gap-10 p-5 ">
+    <div className="w-full min-h-screen flex flex-col items-center justify-start  gap-10 p-5 ">
       <div className="text-2xl font-medium w-full px-2 relative">
         <h1 className="border_bottom">Service</h1>
       </div>

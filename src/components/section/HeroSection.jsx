@@ -8,10 +8,9 @@ import { socialIcon } from "@/data/navigation";
 import Latest from "@/components/ui/Latest";
 import Link from "next/link";
 const HeroSection = () => {
-  
   return (
     <>
-      <div className="w-screen h-screen flex flex-col items-center gap-1 justify-start  py-16">
+      <div className="w-full h-full flex flex-col items-center gap-1 justify-start  py-16">
         <Abutton />
         <div className="hero-logo red w-full h-40  flex items-center justify-evenly">
           <div className="size-36  flex items-center justify-center rounded-full border border-black">

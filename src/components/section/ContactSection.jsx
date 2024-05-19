@@ -10,7 +10,7 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [name, setName] = useState();
   return (
-    <div className="w-screen h-[30rem] p-2 flex flex-col items-center justify-start ">
+    <div className="w-full h-[30rem] p-2 flex flex-col items-center justify-start ">
       <div className="w-full px-2 relative">
         <h1 className="text-2xl font-medium border_bottom">Contact Us</h1>
       </div>

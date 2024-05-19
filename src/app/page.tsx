@@ -6,8 +6,8 @@ import ContactSection from "@/components/section/ContactSection";
 
 export default function Home() {
   return (
-    <main className="flex  min-h-screen  flex-col items-center justify-between p-5 mix-blend-normal ">
-      <div className="flex flex-col w-[30rem] min-h-full items-center justify-center red">
+    <main className="flex  min-h-screen  flex-col items-center justify-between p-5 mix-blend-normal bg-black">
+      <div className="flex flex-col w-[30rem] min-h-full items-center justify-center red bg-white ">
         <HeroSection />
         <AboutSection />
         <ServiceSection />
