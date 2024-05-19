@@ -12,7 +12,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      // padding: "2rem",
       screens: {
         tablet: "640px",
         // => @media (min-width: 640px) { ... }
