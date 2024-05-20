@@ -29,7 +29,7 @@ const MenuButton = () => {
       onClick={() => {
         setOnclick(!onclick);
       }}
-      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-3 right-[39%] flex items-center  justify-center "
+      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-1 right-1  flex items-center  justify-center "
     >
       <div className="flex relative items-center gap-1">
         <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
@@ -37,7 +37,7 @@ const MenuButton = () => {
           variants={buttonAnimation}
           animate={onclick ? "open" : "close"}
           initial="close"
-          className="w-[8.5rem] absolute flex  items-center text-lg flex-col justify-evenly bg-black bottom-0 -right-[1.7rem] -z-20 rounded-md origin-center  "
+          className="w-[8.5rem] absolute flex h-10  items-center text-lg flex-col justify-evenly bg-black -bottom-0 -right-[1.7rem] -z-20 rounded-md origin-center  "
         >
           {navigation.map((data, idx) => {
             return (
