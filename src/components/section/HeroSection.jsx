@@ -1,7 +1,7 @@
 import React from "react";
 import Abutton from "@/components/ui/Abutton";
 import { Button } from "../ui/button";
-import Menubutton from "@/components/ui/MenuButton";
+
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -52,7 +52,7 @@ const HeroSection = () => {
             <Link href={""}> location,via</Link>
           </div>
         </div>
-        <Menubutton />
+       
       </div>
     </>
   );
