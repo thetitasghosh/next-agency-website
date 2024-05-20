@@ -15,11 +15,10 @@ const Header = () => {
   //   }
   // });
   return (
-    <div className="border z-[100] w-full h-16  flex items-center justify-between bg-slate-50 px-5 text-2xl fixed shadow-lg shadow-slate-200 ">
+    <div className="border z-[100] w-full h-16  flex items-center justify-between bg-slate-50 px-5 text-2xl fixed shadow-lg shadow-slate-200 top-0">
       <div className="w-full flex justify-center  font-extrabold text-3xl z-[100]">
         <Link href={"/"}> NGT SOFTWARE</Link>
       </div>
-      
     </div>
   );
 };
