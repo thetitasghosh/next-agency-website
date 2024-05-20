@@ -13,8 +13,8 @@ const HeroSection = () => {
     <>
       <div className="w-full h-screen flex flex-col items-center gap-1 justify-start  py-16">
         <Abutton />
-        <div className="hero-logo  w-full h-40  flex items-center justify-evenly">
-          <div className="size-36  flex items-center justify-center rounded-full border border-black">
+        <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-2">
+          <div className="size-36  flex items-center justify-center rounded-xl border border-black">
             logo
           </div>
           <div className="flex flex-col items-center justify-evenly">
@@ -35,19 +35,21 @@ const HeroSection = () => {
         </div>
         <div
           className="w-full flex
-         flex-col items-center justify-center h-52 gap-2  text-white"
+         flex-col items-center justify-center h-52 gap-2  text-white text-sm"
         >
           <div className="w-60 h-10 flex items-center justify-start gap-3 px-5  rounded-lg bg-zinc-950 ">
             <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
           <div className="w-60 h-10 flex items-center justify-start gap-3 px-5  rounded-lg bg-zinc-950 ">
-            <FaPhone /> |<Link href={""}> 5656565656</Link>
+            <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
           <div className="w-60 h-10 flex items-center justify-start gap-3 px-5  rounded-lg bg-zinc-950 ">
-            <MdEmail /> |<Link href={""}> info@ngtsoftware</Link>
+            <MdEmail className="size-5" /> |
+            <Link href={""}> info@software.com</Link>
           </div>
           <div className="w-60 h-10 flex items-center justify-start gap-3 px-5  rounded-lg bg-zinc-950 ">
-            <FaLocationDot /> |<Link href={""}> location,via</Link>
+            <FaLocationDot className="size-5" /> |
+            <Link href={""}> location,via</Link>
           </div>
         </div>
         <Menubutton />

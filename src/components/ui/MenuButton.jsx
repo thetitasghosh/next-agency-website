@@ -3,7 +3,7 @@ import { navigation } from "@/data/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
-import { MdHome } from "react-icons/md";
+import { IoMenu } from "react-icons/io5";
 const MenuButton = () => {
   const [onclick, setOnclick] = useState(false);
   const buttonAnimation = {
@@ -29,15 +29,15 @@ const MenuButton = () => {
       onClick={() => {
         setOnclick(!onclick);
       }}
-      className="fixed  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-3 right-[39%] flex items-center  justify-center "
+      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-3 right-[39%] flex items-center  justify-center "
     >
-      <div className="flex relative ">
-        <h1>menu</h1> <MdHome className="size-5" />
+      <div className="flex relative items-center gap-1">
+        <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
         <motion.div
           variants={buttonAnimation}
           animate={onclick ? "open" : "close"}
           initial="close"
-          className="w-[8.5rem] absolute flex items-center text-lg flex-col justify-evenly bg-black bottom-0 -right-[2.3rem] -z-20 rounded-md origin-center  "
+          className="w-[8.5rem] absolute flex  items-center text-lg flex-col justify-evenly bg-black bottom-0 -right-[1.7rem] -z-20 rounded-md origin-center  "
         >
           {navigation.map((data, idx) => {
             return (
