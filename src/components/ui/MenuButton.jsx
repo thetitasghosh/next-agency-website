@@ -29,7 +29,7 @@ const MenuButton = () => {
       onClick={() => {
         setOnclick(!onclick);
       }}
-      className="fixed  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-1 right-2 flex items-center  justify-center "
+      className="fixed  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-3 right-[39%] flex items-center  justify-center "
     >
       <div className="flex relative ">
         <h1>menu</h1> <MdHome className="size-5" />

@@ -1,6 +1,7 @@
 import React from "react";
 import Abutton from "@/components/ui/Abutton";
 import { Button } from "../ui/button";
+import Menubutton from "@/components/ui/MenuButton";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -23,7 +24,13 @@ const HeroSection = () => {
         </div>
         <div className="hero-icon  w-full flex items-center justify-evenly h-16  text-black text-3xl">
           {socialIcon.map((data, idx) => {
-            return <h1 className="relative flex" key={idx}> <span className="absolute ring-4 ring-slate-500 size-14 -top-3 -right-[0.80rem] rounded-full animate-pulse"/>{data.icon}</h1>;
+            return (
+              <h1 className="relative flex" key={idx}>
+                {" "}
+                <span className="absolute ring-4 ring-slate-500 size-14 -top-3 -right-[0.80rem] rounded-full animate-pulse" />
+                {data.icon}
+              </h1>
+            );
           })}
         </div>
         <div
@@ -43,6 +50,7 @@ const HeroSection = () => {
             <FaLocationDot /> |<Link href={""}> location,via</Link>
           </div>
         </div>
+        <Menubutton />
       </div>
     </>
   );
