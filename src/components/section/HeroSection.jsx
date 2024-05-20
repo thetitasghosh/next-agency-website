@@ -13,12 +13,12 @@ const HeroSection = () => {
     <>
       <div className="w-full h-screen flex flex-col items-center gap-1 justify-start  py-16">
         <Abutton />
-        <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-2">
+        <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-3 gap-1">
           <div className="size-36  flex items-center justify-center rounded-xl border border-black">
             logo
           </div>
-          <div className="flex flex-col items-center justify-evenly">
-            <h1 className="text-2xl font-bold">NGT SOFTWARE</h1>
+          <div className="flex flex-col items-start justify-evenly">
+            <h1 className="text-2xl font-bold ">NGT SOFTWARE</h1>
             <h1 className="text-xl font-medium">Digital Marketing Agency</h1>
           </div>
         </div>
