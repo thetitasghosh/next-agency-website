@@ -29,7 +29,7 @@ const MenuButton = () => {
       onClick={() => {
         setOnclick(!onclick);
       }}
-      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-1 right-1  flex items-center  justify-center "
+      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-5 right-1  flex items-center  justify-center "
     >
       <div className="flex relative items-center gap-1">
         <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
