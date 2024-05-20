@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 const MenuButton = () => {
   const [onclick, setOnclick] = useState(false);
+
   const buttonAnimation = {
     open: {
       width: "8.5rem",
@@ -29,7 +30,7 @@ const MenuButton = () => {
       onClick={() => {
         setOnclick(!onclick);
       }}
-      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-5 right-3  flex items-center  justify-center "
+      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-5 right-5  flex items-center  justify-center "
     >
       <div className="flex relative items-center gap-1">
         <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
