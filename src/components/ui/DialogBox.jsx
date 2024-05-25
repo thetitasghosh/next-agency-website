@@ -14,7 +14,7 @@ const DialogBox = ({ children }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-96 h-80 rounded-lg">
+      <DialogContent className="w-80 h-60 rounded-lg">
         <DialogHeader>
           <DialogTitle>Share my digital card</DialogTitle>
         </DialogHeader>

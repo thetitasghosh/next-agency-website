@@ -13,7 +13,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center  justify-start  py-14">
+      <div className="w-full min-h-screen flex flex-col items-center  justify-start  py-14">
         <Abutton />
         <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-3  gap-1">
           <div className="size-32  flex items-center justify-center rounded-xl border  border-black">
