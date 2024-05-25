@@ -1,7 +1,9 @@
 import React from "react";
+import { FaRegShareSquare } from "react-icons/fa";
+import { PiDownloadFill } from "react-icons/pi";
 import Abutton from "@/components/ui/Abutton";
 import { Button } from "../ui/button";
-
+import DialogBox from "@/components/ui/DialogBox";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -11,7 +13,7 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center gap-1 justify-start  py-16">
+      <div className="w-full h-screen flex flex-col items-center  justify-start  py-14">
         <Abutton />
         <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-3  gap-1">
           <div className="size-32  flex items-center justify-center rounded-xl border  border-black">
@@ -50,6 +52,23 @@ const HeroSection = () => {
           <div className="w-60 h-10 flex items-center justify-start gap-3 px-5  rounded-lg bg-zinc-950 ">
             <FaLocationDot className="size-5" /> |
             <Link href={""}> location,via</Link>
+          </div>
+        </div>
+        {/* //TODO:  wp_share_input */}
+        <div className="wp_share_input border border-black w-96 h-10 m-2 rounded-md "></div>
+
+        <div className="wp_share_input  flex items-center justify-center gap-2  w-96 h-10 ">
+          <div className="">
+            <Button   className="flex gap-1 border border-black bg-zinc-800 text-white">
+              save to contacts <PiDownloadFill />
+            </Button>
+          </div>
+          <div className=" w-20 h-10 ">
+            <DialogBox>
+              <Button className="flex gap-1">
+                share <FaRegShareSquare />
+              </Button>
+            </DialogBox>
           </div>
         </div>
       </div>
