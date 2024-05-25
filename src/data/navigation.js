@@ -11,10 +11,47 @@ export const navigation = [
   { id: 4, title: "Contact", route: "/" },
 ];
 
+
 export const socialIcon = [
   { id: 1, lable: "phone", icon: <FaPhone /> },
   { id: 2, lable: "whatsapp", icon: <FaWhatsapp /> },
   { id: 3, lable: "location", icon: <FaLocationDot /> },
   { id: 4, lable: "email", icon: <MdEmail /> },
   { id: 5, lable: "website", icon: <FaEarthAsia /> },
+];
+
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaSms } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
+export const ShareOptions = [
+  {
+    id: 1,
+    label: "WhatsApp",
+    icon: <FaWhatsappSquare className="size-full" />,
+    url: "",
+  },
+  { id: 2, label: "SMS", icon: <FaSms className="size-full" />, url: "" },
+  {
+    id: 3,
+    label: "Facebook",
+    icon: <FaFacebookSquare className="size-full" />,
+    url: "",
+  },
+  { id: 4, label: "X", icon: <FaXTwitter className="size-full" />, url: "" },
+  {
+    id: 5,
+    label: "Instragram",
+    icon: <FaSquareInstagram className="size-full" />,
+    url: "",
+  },
+  {
+    id: 6,
+    label: "LinkedIn",
+    icon: <FaLinkedin className="size-full" />,
+    url: "",
+  },
 ];

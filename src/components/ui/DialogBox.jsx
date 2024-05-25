@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button";
+import { ShareOptions } from "@/data/navigation";
 import {
   Dialog,
   DialogClose,
@@ -14,12 +14,21 @@ const DialogBox = ({ children }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-80 h-60 rounded-lg">
+      <DialogContent className="w-80 h-60 rounded-lg flex items-center justify-center flex-col">
         <DialogHeader>
           <DialogTitle>Share my digital card</DialogTitle>
         </DialogHeader>
-        <div className="flex items-center justify-center">
-          <h1>content here</h1>
+        <div className=" w-72 h-80 flex items-center justify-center">
+          <div className="w-full h-full  flex items-center justify-center gap-3">
+            {ShareOptions.map((data, idx) => {
+              return (
+                <div key={idx} className="size-10 cursor-pointer">
+                  <div>{data.icon}</div>
+                  {/* <p className="text-xs">{data.label}</p> */}
+                </div>
+              );
+            })}
+          </div>
         </div>
         <DialogFooter>
           <DialogClose>close</DialogClose>
