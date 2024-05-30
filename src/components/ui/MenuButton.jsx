@@ -26,33 +26,35 @@ const MenuButton = () => {
   };
 
   return (
-    <div
-      onClick={() => {
-        setOnclick(!onclick);
-      }}
-      className="fixed cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10  z-50 bottom-3 right-5  flex items-center  justify-center "
-    >
-      <div className="flex relative items-center gap-1">
-        <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
-        <motion.div
-          variants={buttonAnimation}
-          animate={onclick ? "open" : "close"}
-          initial="close"
-          className="w-[8.5rem] absolute flex h-10  items-center text-lg flex-col justify-evenly bg-black -bottom-0 -right-[1.7rem] -z-20 rounded-md origin-center  "
-        >
-          {navigation.map((data, idx) => {
-            return (
-              <Link
-                key={idx}
-                style={{ display: onclick ? "" : "none" }}
-                href={data.route}
-                className="transition-all delay-75"
-              >
-                {data.title}
-              </Link>
-            );
-          })}
-        </motion.div>
+    <div className="fixed w-screen flex items-center justify-center z-50 bottom-1  red">
+      <div
+        onClick={() => {
+          setOnclick(!onclick);
+        }}
+        className="cursor-pointer  w-[8.5rem] bg-black text-white  rounded-md h-10    flex items-center  justify-center "
+      >
+        <div className="flex relative items-center gap-1">
+          <h1 className="text-xl">menu</h1> <IoMenu className="size-6" />
+          <motion.div
+            variants={buttonAnimation}
+            animate={onclick ? "open" : "close"}
+            initial="close"
+            className="w-[8.5rem] absolute flex h-10  items-center text-lg flex-col justify-evenly bg-black -bottom-0 -right-[1.7rem] -z-20 rounded-md origin-center  "
+          >
+            {navigation.map((data, idx) => {
+              return (
+                <Link
+                  key={idx}
+                  style={{ display: onclick ? "" : "none" }}
+                  href={data.route}
+                  className="transition-all delay-75"
+                >
+                  {data.title}
+                </Link>
+              );
+            })}
+          </motion.div>
+        </div>
       </div>
     </div>
   );
