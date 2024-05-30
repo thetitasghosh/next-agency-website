@@ -4,11 +4,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaEarthAsia } from "react-icons/fa6";
 import { GoHome } from "react-icons/go";
+import { CgProfile } from "react-icons/cg";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { MdOutlineMailOutline } from "react-icons/md";
 export const navigation = [
-  { id: 1, title: "Home", route: "/" ,icon:<GoHome/>},
-  { id: 2, title: "About", route: "/" ,icon:""},
-  { id: 3, title: "Work", route: "/",icon:"" },
-  { id: 4, title: "Contact", route: "/",icon:"" },
+  { id: 1, title: "Home", route: "/", icon: <GoHome  className="size-8 "/> },
+  { id: 2, title: "About", route: "/", icon: <CgProfile className="size-8 "/> },
+  { id: 3, title: "Work", route: "/", icon: <MdOutlineWorkOutline className="size-8 "/> },
+  { id: 4, title: "Contact", route: "/", icon: <MdOutlineMailOutline className="size-8 "/> },
 ];
 
 
