@@ -26,7 +26,7 @@ const MenuButton = () => {
   };
 
   return (
-    <div className="fixed w-screen flex items-center justify-center z-50 bottom-5  red p-2">
+    <div className="fixed w-full flex items-center justify-center z-50 bottom-5  red p-2">
       <div
         onClick={() => {
           setOnclick(!onclick);

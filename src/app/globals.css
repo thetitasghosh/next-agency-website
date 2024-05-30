@@ -84,7 +84,7 @@
 }
 
 .border_bottom{
-  width: 98%;
+  width: 100%;
   position: absolute;
   border-bottom: 1px solid black;
 }
