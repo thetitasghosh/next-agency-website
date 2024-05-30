@@ -8,7 +8,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { socialIcon } from "@/data/navigation";
-import Latest from "@/components/ui/Latest";
+import WpShare from "@/components/ui/WpShare";
 import Link from "next/link";
 const HeroSection = () => {
   return (
@@ -55,11 +55,13 @@ const HeroSection = () => {
           </div>
         </div>
         {/* //TODO:  wp_share_input */}
-        <div className="wp_share_input border border-black w-96 h-10 m-2 rounded-md "></div>
+        <div className="wp_share_input flex items-center justify-center  w-96 h-14 p-2 rounded-md ">
+          <WpShare />
+        </div>
 
         <div className="wp_share_input  flex items-center justify-center gap-2  w-96 h-10 ">
           <div className="">
-            <Button   className="flex gap-1 border border-black bg-zinc-800 text-white">
+            <Button className="flex gap-1 border border-black bg-zinc-800 text-white">
               save to contacts <PiDownloadFill />
             </Button>
           </div>
