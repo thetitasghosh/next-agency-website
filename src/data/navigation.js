@@ -3,12 +3,12 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaEarthAsia } from "react-icons/fa6";
-
+import { GoHome } from "react-icons/go";
 export const navigation = [
-  { id: 1, title: "Home", route: "/" },
-  { id: 2, title: "About", route: "/" },
-  { id: 3, title: "Work", route: "/" },
-  { id: 4, title: "Contact", route: "/" },
+  { id: 1, title: "Home", route: "/" ,icon:<GoHome/>},
+  { id: 2, title: "About", route: "/" ,icon:""},
+  { id: 3, title: "Work", route: "/",icon:"" },
+  { id: 4, title: "Contact", route: "/",icon:"" },
 ];
 
 
