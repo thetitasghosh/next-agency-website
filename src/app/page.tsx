@@ -10,23 +10,38 @@ import AppButton from "@/components/ui/MBotton";
 import { useEffect, useRef } from "react";
 export default function Home() {
   const about = useRef(null);
-// useEffect(()=>{
-//   const AboutPage = document.querySelector("aboutpage");
-//   AboutPage?.addEventListener()
-// })
+  const home = useRef(null);
+  const work = useRef(null);
+  const contact = useRef(null);
+  const service = useRef(null);
+ 
   return (
     <main className="flex w-full  min-h-full   items-center justify-center    bg-black">
       <div className=" flex flex-col w-[400px] h-full  items-center justify-center  bg-white overflow-hidden">
         {/* <Header /> */}
-        <HeroSection />
+        <div ref={home} id="homepage">
+          <HeroSection />
+        </div>
         <div ref={about} id="aboutpage">
           <AboutSection />
         </div>
-        <ServiceSection />
-        <WorkSection />
-        <ContactSection />
+        <div ref={service} id="servicepage">
+          <ServiceSection />
+        </div>
+        <div ref={work} id="workpage">
+          <WorkSection />
+        </div>
+        <div ref={contact} id="contactpage">
+          <ContactSection />
+        </div>
         {/* <Menubutton /> */}
-        <AppButton />
+        <AppButton
+          Home={home}
+          About={about}
+          Contact={contact}
+          Work={work}
+          Service={service}
+        />
       </div>
     </main>
   );
