@@ -91,7 +91,10 @@ width: 100%;
 .green {
   border: 1px solid green;
 }
+.black{
+border: 1px solid black;
 
+}
 .border_bottom{
   width: 100%;
   position: absolute;

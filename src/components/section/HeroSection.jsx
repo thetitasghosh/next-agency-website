@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { socialIcon } from "@/data/navigation";
 import WpShare from "@/components/ui/WpShare";
 import Link from "next/link";
+import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const HeroSection = () => {
         <Abutton />
         <div className="hero-logo  w-full h-40  flex items-center justify-evenly px-3  gap-1">
           <div className="size-32  flex items-center justify-center rounded-xl border  border-black">
-            logo
+            <Image src={''} alt="NGT-SOFTWARE logo" />
           </div>
           <div className="flex flex-col items-start justify-evenly">
             <h1 className="text-2xl font-bold ">NGT SOFTWARE</h1>

@@ -1,6 +1,6 @@
-import SMM from '../../public/img/SMM.jpg'
-import LOGOD from '../../public/img/LOGOD.jpg'
-import WEBD from '../../public/img/WEBD.jpg'
+import SMM from '../../public/img/service/SMM.jpg'
+import LOGOD from '../../public/img/service/LOGOD.jpg'
+import WEBD from '../../public/img/service/WEBD.jpg'
 export const service =[
     {
         id:1,
