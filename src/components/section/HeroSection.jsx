@@ -1,4 +1,5 @@
 import React from "react";
+import ngtLogo from "../../../public/asset/ngt.webp";
 import { FaRegShareSquare } from "react-icons/fa";
 import { PiDownloadFill } from "react-icons/pi";
 import Abutton from "@/components/ui/Abutton";
@@ -17,8 +18,13 @@ const HeroSection = () => {
       <div className="flex min-h-screen w-[400px] flex-col items-center justify-start overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
-          <div className="flex size-32 items-center justify-center rounded-xl border border-black">
-            <Image src={""} alt="NGT-SOFTWARE logo" />
+          <div className="flex size-32 items-center justify-center rounded-xl border">
+            <Image
+              src={ngtLogo}
+              className="rounded-xl"
+              width={120}
+              alt="NGT-SOFTWARE logo"
+            />
           </div>
           <div className="flex flex-col items-start justify-evenly">
             <h1 className="text-2xl font-bold">NGT SOFTWARE</h1>
