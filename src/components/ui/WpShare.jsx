@@ -3,13 +3,13 @@ import { Button } from "./button";
 import { Input } from "./input";
 const WpShare = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center gap-1 ">
+    <div className="flex h-full w-full items-center justify-center gap-1">
       <Input
         id="phone_number"
         type="text"
         defaultValue={"+91"}
         placeholder="WhtasApp Number With Country Code"
-        className="border border-black w-full h-full"
+        className="h-full w-full border border-black"
       ></Input>
       <Button className="bg-green-600">share on wp</Button>
     </div>

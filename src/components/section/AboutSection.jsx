@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="w-[400px] min-h-96 flex flex-col items-center justify-start  gap-10 p-2 overflow-hidden">
-      <div className="w-full text-2xl px-2 relative">
-        <h1 className="  font-medium border_bottom">About us ...</h1>
+    <div className="flex min-h-96 w-[400px] flex-col items-center justify-start gap-10 overflow-hidden p-2">
+      <div className="relative w-full px-2 text-2xl">
+        <h1 className="border_bottom font-medium">About us ...</h1>
       </div>
-      <div className="w-full h-80 flex items-center justify-center  p-5">
-        <p className="text-lg font-medium text-left ">
+      <div className="flex h-80 w-full items-center justify-center p-5">
+        <p className="text-left text-lg font-medium">
           Digital Bandhan, a Bankura-based digital marketing company, offers a
           variety of services to help businesses grow in today competitive
           market. From graphic design and social media marketing to video and
@@ -18,6 +18,6 @@ const AboutSection = () => {
       </div>
     </div>
   );
-}
+};
 
 export default AboutSection;

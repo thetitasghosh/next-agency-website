@@ -75,15 +75,16 @@
     overflow-x: hidden;
   }
 } */
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-height: 100%;
-width: 100%;
-/* overflow: hidden; */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
 }
 .red {
   border: 1px solid red;
@@ -91,11 +92,10 @@ width: 100%;
 .green {
   border: 1px solid green;
 }
-.black{
-border: 1px solid black;
-
+.black {
+  border: 1px solid black;
 }
-.border_bottom{
+.border_bottom {
   width: 100%;
   position: absolute;
   border-bottom: 1px solid black;

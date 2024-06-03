@@ -10,12 +10,12 @@ const ContactSection = () => {
   const { toast } = useToast();
   const [name, setName] = useState();
   return (
-    <div className="w-[400px] h-[35rem] p-2 flex flex-col items-center justify-start overflow-hidden">
-      <div className="w-full px-2 relative">
-        <h1 className="text-2xl font-medium border_bottom">Contact Us</h1>
+    <div className="flex h-[35rem] w-[400px] flex-col items-center justify-start overflow-hidden p-2">
+      <div className="relative w-full px-2">
+        <h1 className="border_bottom text-2xl font-medium">Contact Us</h1>
       </div>
-      <div className="w-full gap-3 text-black h-fit flex flex-col items-center justify-center  p-20 px-5">
-        <Label htmlFor="name" className="text-black w-full px-1">
+      <div className="flex h-fit w-full flex-col items-center justify-center gap-3 p-20 px-5 text-black">
+        <Label htmlFor="name" className="w-full px-1 text-black">
           Your Name
         </Label>
         <Input
@@ -26,7 +26,7 @@ const ContactSection = () => {
           placeholder="Your Name"
           className="border border-black"
         />
-        <Label htmlFor="email" className="text-black w-full px-1">
+        <Label htmlFor="email" className="w-full px-1 text-black">
           Your Email
         </Label>
         <Input
@@ -35,7 +35,7 @@ const ContactSection = () => {
           placeholder="Your Email"
           className="border border-black"
         />
-        <Label htmlFor="message" className="text-black w-full px-1">
+        <Label htmlFor="message" className="w-full px-1 text-black">
           Your message
         </Label>
         <Textarea

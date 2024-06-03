@@ -3,11 +3,11 @@ import { service } from "@/data/serviceData";
 import Card from "@/components/ui/card";
 const ServiceSection = () => {
   return (
-    <div className="w-[400px] min-h-screen flex flex-col items-center justify-start  gap-10 p-2 overflow-hidden">
-      <div className="text-2xl font-medium w-full px-2 relative">
+    <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-10 overflow-hidden p-2">
+      <div className="relative w-full px-2 text-2xl font-medium">
         <h1 className="border_bottom">Service</h1>
       </div>
-      <div className="flex min-h-screen items-center justify-center flex-col gap-5">
+      <div className="flex min-h-screen flex-col items-center justify-center gap-5">
         {service.map((serve, idx) => {
           return <Card key={idx} data={serve} />;
         })}
