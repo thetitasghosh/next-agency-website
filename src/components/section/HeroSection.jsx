@@ -16,7 +16,7 @@ const HeroSection = () => {
     <>
       <div className="flex min-h-screen w-[400px] flex-col items-center justify-start overflow-hidden py-14">
         <Abutton />
-        <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-1 px-3">
+        <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border border-black">
             <Image src={""} alt="NGT-SOFTWARE logo" />
           </div>
