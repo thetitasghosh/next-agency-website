@@ -20,7 +20,7 @@ export default function Home() {
         <div ref={home} id="homepage">
           <HeroSection />
         </div>
-        <div ref={about} id="aboutpage" className="red">
+        <div ref={about} id="aboutpage" >
           <AboutSection />
         </div>
         <div ref={service} id="servicepage">
