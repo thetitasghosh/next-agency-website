@@ -31,7 +31,7 @@ const DialogBox = ({ children }) => {
           </div>
         </div>
         <DialogFooter>
-          <DialogClose>close</DialogClose>
+          <DialogClose className="border p-1 border-black rounded-lg">close</DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>
