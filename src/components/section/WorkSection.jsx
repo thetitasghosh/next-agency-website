@@ -25,11 +25,11 @@ const WorkSection = () => {
    });
   },[wApi])
   return (
-    <div className="w-[400px] red h-[40rem] flex flex-col items-center gap-2 justify-start p-5 py-10 overflow-hidden">
-      <div className="w-full px-2 h-16 red relative ">
+    <div className="w-[400px]  h-[40rem] flex flex-col items-center gap-2 justify-start p-5 py-10 overflow-hidden">
+      <div className="w-full px-2 h-16  relative ">
         <h1 className="text-2xl font-medium  border_bottom">Works</h1>
       </div>
-      <div className="red w-full h-[25rem] gap-1 flex items-center justify-center p-2">
+      <div className=" w-full h-[25rem] gap-1 flex items-center justify-center p-2">
         <Carousel setApi={setWApi}  className="w-full   p-2 ">
           <CarouselContent className="">
             {workdata.map((data, idx) => {
@@ -47,7 +47,7 @@ const WorkSection = () => {
           {/* <CarouselNext /> */}
         </Carousel>
       </div>
-      <div className=" w-full red h-10  justify-center flex">
+      <div className=" w-full  h-10  justify-center flex">
         <h1 className="text-xl font-medium">
           Work {current} of {count}
         </h1>
