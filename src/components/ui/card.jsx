@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
+import Link from "next/link";
 
 const card = ({ data }) => {
   return (
@@ -18,7 +19,9 @@ const card = ({ data }) => {
         <h1>price</h1>
       </div>
       <div className="flex w-full items-center justify-evenly">
-        <Button variant={""}>Enquiry</Button>
+        <Link href={'#contactpage'} >
+          <Button variant={""}>Enquiry</Button>
+        </Link>
         <Button variant={"destructive"}>Buy now</Button>
       </div>
     </div>
