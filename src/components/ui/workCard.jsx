@@ -4,7 +4,7 @@ import React from 'react';
 const workCard = ({data}) => {
     const {img,title,desq,date}=data
   return (
-    <div className="black w-80 p-2 h-96 flex items-center justify-start gap-2 flex-col shadow-md shadow-slate-500">
+    <div className="black w-80 p-2 h-96 flex items-center justify-start gap-2 flex-col shadow-md shadow-slate-500 rounded-md">
       <div className="w-full flex justify-between items-center rounded">
         <Image
           className="black rounded w-full"
