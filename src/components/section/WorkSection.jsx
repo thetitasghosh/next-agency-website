@@ -30,7 +30,7 @@ const WorkSection = () => {
         <h1 className="text-2xl font-medium  border_bottom">Works</h1>
       </div>
       <div className=" w-full h-[25rem] gap-1 flex items-center justify-center p-2">
-        <Carousel setApi={setWApi}  className="w-full   p-2 ">
+        <Carousel setApi={setWApi}  className="w-full     ">
           <CarouselContent className="">
             {workdata.map((data, idx) => {
               return (
@@ -44,7 +44,7 @@ const WorkSection = () => {
             })}
           </CarouselContent>
           {/* <CarouselPrevious /> */}
-          {/* <CarouselNext /> */}
+          {/* <CarouselNext  /> */}
         </Carousel>
       </div>
       <div className=" w-full  h-10  justify-center flex">
