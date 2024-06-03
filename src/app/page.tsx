@@ -3,10 +3,8 @@ import HeroSection from "@/components/section/HeroSection";
 import AboutSection from "@/components/section/AboutSection";
 import ServiceSection from "@/components/section/ServiceSection";
 import WorkSection from "@/components/section/WorkSection";
-// import Header from "@/components/section/Header";
 import ContactSection from "@/components/section/ContactSection";
-import Menubutton from "@/components/ui/MenuButton";
-import AppButton from "@/components/ui/MBotton";
+import AppButton from "@/components/ui/AppBotton";
 import { useEffect, useRef } from "react";
 export default function Home() {
   const about = useRef(null);
@@ -22,7 +20,7 @@ export default function Home() {
         <div ref={home} id="homepage">
           <HeroSection />
         </div>
-        <div ref={about} id="aboutpage">
+        <div ref={about} id="aboutpage" className="red">
           <AboutSection />
         </div>
         <div ref={service} id="servicepage">
@@ -35,13 +33,7 @@ export default function Home() {
           <ContactSection />
         </div>
         {/* <Menubutton /> */}
-        <AppButton
-          Home={home}
-          About={about}
-          Contact={contact}
-          Work={work}
-          Service={service}
-        />
+        <AppButton />
       </div>
     </main>
   );
