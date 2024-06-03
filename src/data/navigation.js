@@ -60,27 +60,27 @@ export const ShareOptions = [
   {
     id: 1,
     label: "WhatsApp",
-    icon: <FaWhatsappSquare className="size-full" />,
+    icon: <FaWhatsappSquare className="size-full rounded text-green-500" />,
     url: "",
   },
-  { id: 2, label: "SMS", icon: <FaSms className="size-full" />, url: "" },
+  { id: 2, label: "SMS", icon: <FaSms className="size-full text-red-500" />, url: "" },
   {
     id: 3,
     label: "Facebook",
-    icon: <FaFacebookSquare className="size-full" />,
+    icon: <FaFacebookSquare className="size-full text-blue-500" />,
     url: "",
   },
   { id: 4, label: "X", icon: <FaXTwitter className="size-full" />, url: "" },
   {
     id: 5,
     label: "Instragram",
-    icon: <FaSquareInstagram className="size-full" />,
+    icon: <FaSquareInstagram className="size-full text-pink-500" />,
     url: "",
   },
   {
     id: 6,
     label: "LinkedIn",
-    icon: <FaLinkedin className="size-full" />,
+    icon: <FaLinkedin className="size-full text-blue-700" />,
     url: "",
   },
 ];
