@@ -15,7 +15,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="flex min-h-screen w-[400px] flex-col gap-4 items-center justify-start overflow-hidden py-14">
+      <div className="flex min-h-screen w-[400px] flex-col gap-2 items-center justify-start overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
