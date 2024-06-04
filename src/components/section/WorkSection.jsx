@@ -25,7 +25,7 @@ const WorkSection = () => {
     });
   }, [wApi]);
   return (
-    <div className="flex  h-[40rem] w-[400px] flex-col items-center justify-start gap-2 overflow-hidden p-5 py-20">
+    <div className="flex  h-[40rem] w-[400px] flex-col items-center justify-start gap-2 overflow-hidden p-5 pt-20">
       <div className="relative h-16 w-full px-2">
         
         <h1 className="border_bottom text-2xl font-medium">Works</h1>

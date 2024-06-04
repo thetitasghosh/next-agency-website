@@ -3,7 +3,7 @@ import { service } from "@/data/serviceData";
 import Card from "@/components/ui/card";
 const ServiceSection = () => {
   return (
-    <div className="flex py-20 min-h-screen w-[400px] flex-col items-center justify-start gap-10 overflow-hidden p-2">
+    <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-10 overflow-hidden p-2 pt-20">
       <div className="relative w-full px-2 text-2xl font-medium">
         <h1 className="border_bottom">Service</h1>
       </div>

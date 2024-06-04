@@ -1,4 +1,6 @@
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa6";
+
 import { Button } from "./button";
 import { Input } from "./input";
 const WpShare = () => {
@@ -11,7 +13,7 @@ const WpShare = () => {
         placeholder="WhtasApp Number With Country Code"
         className="h-full w-full border border-black"
       ></Input>
-      <Button className="bg-green-600 hover:bg-green-600">share on wp</Button>
+      <Button className="bg-green-600 text-xs hover:bg-green-600 gap-1"> <FaWhatsapp className="size-4"/> Share on WhtasApp</Button>
     </div>
   );
 };

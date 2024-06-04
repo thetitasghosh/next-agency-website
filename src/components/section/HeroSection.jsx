@@ -15,7 +15,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start overflow-hidden py-14">
+      <div className="flex min-h-screen w-[400px] flex-col gap-4 items-center justify-start overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
@@ -28,7 +28,7 @@ const HeroSection = () => {
           </div>
           <div className="flex flex-col items-start justify-evenly">
             <h1 className="text-2xl font-bold">NGT SOFTWARE</h1>
-            <h1 className="text-xl font-medium">Digital Marketing Agency</h1>
+            <h1 className="text-lg font-medium">Digital Marketing Agency</h1>
           </div>
         </div>
         <div className="hero-icon flex h-16 w-full items-center justify-evenly text-3xl text-black">
@@ -42,7 +42,7 @@ const HeroSection = () => {
             );
           })}
         </div>
-        <div className="flex h-52 w-full flex-col items-center justify-center gap-2 text-sm text-white">
+        <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-zinc-950 px-5">
             <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
