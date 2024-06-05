@@ -10,6 +10,7 @@ const config = {
   ],
   prefix: "",
   theme: {
+   
     container: {
       // center: true,
       // padding: "2rem",
@@ -26,6 +27,7 @@ const config = {
     },
     extend: {
       colors: {
+        clickBlue :'#194EE0',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

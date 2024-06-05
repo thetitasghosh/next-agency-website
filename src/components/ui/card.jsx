@@ -20,7 +20,7 @@ const card = ({ data }) => {
       </div>
       <div className="flex w-full items-center justify-evenly">
         <Link href={'#contactpage'} >
-          <Button variant={""}>Enquiry</Button>
+          <Button className="bg-clickBlue">Enquiry</Button>
         </Link>
         <Button variant={"destructive"}>Buy now</Button>
       </div>

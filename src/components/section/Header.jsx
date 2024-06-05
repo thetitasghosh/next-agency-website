@@ -18,7 +18,9 @@ const Header = () => {
     <div className="fixed z-[50] flex h-16 w-full justify-center">
       <div className="top-0 flex w-[400px] items-center justify-between border bg-slate-50 text-2xl shadow-lg shadow-slate-200">
         <div className="z-[100] flex w-full justify-center text-3xl font-extrabold">
-          <Link href={"/"}> NGT SOFTWARE</Link>
+          <Link href={"/"}>
+            <h1 className="text-blue-600"> NGT SOFTWARE</h1>
+          </Link>
         </div>
       </div>
     </div>

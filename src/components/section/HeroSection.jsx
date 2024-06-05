@@ -43,17 +43,17 @@ const HeroSection = () => {
           })}
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-zinc-950 px-5">
+          <div className="flex  h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-zinc-950 px-5">
+          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-zinc-950 px-5">
+          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <MdEmail className="size-5" /> |
             <Link href={""}> info@software.com</Link>
           </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-zinc-950 px-5">
+          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <FaLocationDot className="size-5" /> |
             <Link href={""}> location,via</Link>
           </div>
@@ -65,13 +65,13 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
-            <Button className="flex gap-1 border border-black bg-zinc-800 text-white">
+            <Button className="flex gap-1 border bg-clickBlue   text-white">
               save to contacts <PiDownloadFill />
             </Button>
           </div>
           <div className="h-10 w-20">
             <DialogBox>
-              <Button className="flex gap-1">
+              <Button className="flex gap-1 bg-clickBlue">
                 share <FaRegShareSquare />
               </Button>
             </DialogBox>
