@@ -36,7 +36,7 @@ const HeroSection = () => {
             return (
               <h1 className="relative flex" key={idx}>
                 {" "}
-                <span className="absolute -right-[0.80rem] -top-3 size-14 animate-pulse rounded-full ring-4 ring-slate-500" />
+                <span className="absolute -right-[0.80rem] -top-3 size-14 animate-pulse rounded-full ring-4 ring-blue-300 " />
                 {data.icon}
               </h1>
             );
