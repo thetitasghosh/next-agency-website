@@ -2,7 +2,7 @@ import React from "react";
 import ngtLogo from "../../../public/asset/ngt.webp";
 import { FaRegShareSquare } from "react-icons/fa";
 import { PiDownloadFill } from "react-icons/pi";
-import Abutton from "@/components/ui/Abutton";
+import Abutton from "@/components/ui/availableButton";
 import { Button } from "../ui/button";
 import DialogBox from "@/components/ui/DialogBox";
 import { FaPhone } from "react-icons/fa6";
