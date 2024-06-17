@@ -41,12 +41,13 @@ export const navigation = [
   },
 ];
 
+//TODO: create link to href individualy
 export const socialIcon = [
-  { id: 1, lable: "phone", icon: <FaPhone /> },
-  { id: 2, lable: "whatsapp", icon: <FaWhatsapp /> },
-  { id: 3, lable: "location", icon: <FaLocationDot /> },
-  { id: 4, lable: "email", icon: <MdEmail /> },
-  { id: 5, lable: "website", icon: <FaEarthAsia /> },
+  { id: 1,href:"/", lable: "phone", icon: <FaPhone /> },
+  { id: 2,href:"/", lable: "whatsapp", icon: <FaWhatsapp /> },
+  { id: 3,href:"/", lable: "location", icon: <FaLocationDot /> },
+  { id: 4,href:"/", lable: "email", icon: <MdEmail /> },
+  { id: 5,href:"/", lable: "website", icon: <FaEarthAsia /> },
 ];
 
 import { FaWhatsappSquare } from "react-icons/fa";

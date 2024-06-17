@@ -1,0 +1,1 @@
+export const  ABOUTSECTION_DESQCRIPTON_PARA = ''

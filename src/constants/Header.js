@@ -1,0 +1,1 @@
+export const HEADER_WEBSITE_TITLE = "NGT SOFTWARE";

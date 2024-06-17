@@ -15,7 +15,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="flex min-h-screen w-[400px] flex-col gap-2 items-center justify-start overflow-hidden py-14">
+      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
@@ -34,16 +34,18 @@ const HeroSection = () => {
         <div className="hero-icon flex h-16 w-full items-center justify-evenly text-3xl text-black">
           {socialIcon.map((data, idx) => {
             return (
-              <h1 className="relative flex" key={idx}>
-                {" "}
-                <span className="absolute -right-[0.80rem] -top-3 size-14 animate-pulse rounded-full ring-4 ring-blue-300 " />
-                {data.icon}
-              </h1>
+              <Link key={idx} href={data.href} target="_blank">
+                <h1 className="relative flex" key={idx}>
+                  {" "}
+                  <span className="absolute -right-[0.80rem] -top-3 size-14 animate-pulse rounded-full ring-4 ring-blue-300" />
+                  {data.icon}
+                </h1>
+              </Link>
             );
           })}
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
-          <div className="flex  h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
+          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
@@ -65,7 +67,7 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
-            <Button className="flex gap-1 border bg-clickBlue   text-white">
+            <Button className="flex gap-1 border bg-clickBlue text-white">
               save to contacts <PiDownloadFill />
             </Button>
           </div>

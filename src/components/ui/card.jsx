@@ -16,7 +16,7 @@ const card = ({ data }) => {
       </div>
       <h1 className="text-xl font-semibold">{data.service}</h1>
       <div className="flex h-10 w-full items-center justify-center">
-        <h1>price</h1>
+        <h1>{data.price}</h1>
       </div>
       <div className="flex w-full items-center justify-evenly">
         <Link href={'#contactpage'} >
