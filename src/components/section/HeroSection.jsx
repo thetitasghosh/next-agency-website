@@ -1,5 +1,5 @@
 import React from "react";
-import ngtLogo from "../../../public/asset/ngt.webp";
+import LOGO from "../../../public/asset/LOGO.webp";
 import { FaRegShareSquare } from "react-icons/fa";
 import { PiDownloadFill } from "react-icons/pi";
 import Abutton from "@/components/ui/availableButton";
@@ -20,7 +20,7 @@ const HeroSection = () => {
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
             <Image
-              src={ngtLogo}
+              src={LOGO}
               className="rounded-xl"
               width={120}
               alt="NGT-SOFTWARE logo"
