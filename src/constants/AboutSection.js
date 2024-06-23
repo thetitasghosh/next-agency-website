@@ -1,1 +1,1 @@
-export const  ABOUTSECTION_DESQCRIPTON_PARA = ''
+export const  ABOUT_SECTION_DESQCRIPTON_PARA = ''

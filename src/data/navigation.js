@@ -43,11 +43,11 @@ export const navigation = [
 
 //TODO: create link to href individualy
 export const socialIcon = [
-  { id: 1,href:"/", lable: "phone", icon: <FaPhone /> },
-  { id: 2,href:"/", lable: "whatsapp", icon: <FaWhatsapp /> },
-  { id: 3,href:"/", lable: "location", icon: <FaLocationDot /> },
-  { id: 4,href:"/", lable: "email", icon: <MdEmail /> },
-  { id: 5,href:"/", lable: "website", icon: <FaEarthAsia /> },
+  { id: 1, href: "/", lable: "phone", icon: <FaPhone /> },
+  { id: 2, href: "/", lable: "whatsapp", icon: <FaWhatsapp /> },
+  { id: 3, href: "/", lable: "location", icon: <FaLocationDot /> },
+  { id: 4, href: "/", lable: "email", icon: <MdEmail /> },
+  { id: 5, href: "/", lable: "website", icon: <FaEarthAsia /> },
 ];
 
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -64,7 +64,12 @@ export const ShareOptions = [
     icon: <FaWhatsappSquare className="size-full rounded text-green-500" />,
     url: "",
   },
-  { id: 2, label: "SMS", icon: <FaSms className="size-full text-red-500" />, url: "" },
+  {
+    id: 2,
+    label: "SMS",
+    icon: <FaSms className="size-full text-red-500" />,
+    url: "",
+  },
   {
     id: 3,
     label: "Facebook",

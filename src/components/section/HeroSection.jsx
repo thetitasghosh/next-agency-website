@@ -1,5 +1,13 @@
 import React from "react";
 import LOGO from "../../../public/asset/LOGO.webp";
+import {
+  HERO_SECTION_WEBSITE_TITLE as title,
+  HERO_SECTION_WEBSITE_DESQ as Desq,
+  HERO_SECTION_WEBSITE_PHN_NO1 as phone1,
+  HERO_SECTION_WEBSITE_PHN_NO2 as phone2,
+  HERO_SECTION_WEBSITE_EMAIL as email,
+  HERO_SECTION_WEBSITE_lOCATION as location,
+} from "@/constants/HeroSection";
 import { FaRegShareSquare } from "react-icons/fa";
 import { PiDownloadFill } from "react-icons/pi";
 import Abutton from "@/components/ui/availableButton";
@@ -27,8 +35,8 @@ const HeroSection = () => {
             />
           </div>
           <div className="flex flex-col items-start justify-evenly">
-            <h1 className="text-2xl font-bold">NGT SOFTWARE</h1>
-            <h1 className="text-lg font-medium">Digital Marketing Agency</h1>
+            <h1 className="text-2xl font-bold">{title}</h1>
+            <h1 className="text-lg font-medium"> {Desq} </h1>
           </div>
         </div>
         <div className="hero-icon flex h-16 w-full items-center justify-evenly text-3xl text-black">
@@ -46,18 +54,17 @@ const HeroSection = () => {
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
-            <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
+            <FaPhone className="size-5" /> |<Link href={""}> {phone1} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
-            <FaPhone className="size-5" /> |<Link href={""}> 5656565656</Link>
+            <FaPhone className="size-5" /> |<Link href={""}> {phone2} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
-            <MdEmail className="size-5" /> |
-            <Link href={""}> info@software.com</Link>
+            <MdEmail className="size-5" /> |<Link href={""}> {email} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-clickBlue px-5">
             <FaLocationDot className="size-5" /> |
-            <Link href={""}> location,via</Link>
+            <Link href={""}> {location} </Link>
           </div>
         </div>
         {/* //TODO:  wp_share_input */}
