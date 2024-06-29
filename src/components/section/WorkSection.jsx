@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import WorkCard from "@/components/ui/workCard";
+import WorkCard from "@/components/ui/WorkCard";
 const WorkSection = () => {
   const [wApi, setWApi] = useState();
   const [current, setCurrent] = useState(0);
