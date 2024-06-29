@@ -20,7 +20,7 @@ const Header = () => {
       <div className="top-0 flex w-[400px] items-center justify-between border text-2xl bg-background/70 backdrop-blur-md">
         <div className="z-[100] flex w-full justify-center text-3xl font-extrabold">
           <Link href={"/"}>
-            <h1 className="text-blue-600"> {title} </h1>
+            <h1 className="text-Blue"> {title} </h1>
           </Link>
         </div>
       </div>

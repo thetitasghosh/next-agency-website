@@ -10,7 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-   
     container: {
       // center: true,
       // padding: "2rem",
@@ -28,8 +27,7 @@ const config = {
     extend: {
       colors: {
         // custome color variables
-        Blue :'#194EE0',
-
+        Blue: "#194EE0",
 
         //some default color
         border: "hsl(var(--border))",
