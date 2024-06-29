@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "NGT-SOFTWARE",
   description: "Created by Titas Ghosh",
+  metadataBase: new URL("https://next-agency-website-five.vercel.app/"),
 };
 
 export default function RootLayout({
