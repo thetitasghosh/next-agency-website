@@ -50,7 +50,7 @@ const ContactSection = () => {
               description: name || "test ",
             });
           }}
-          className="w-full bg-clickBlue"
+          className="w-full bg-Blue"
         >
           Send message
         </Button>
