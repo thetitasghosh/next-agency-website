@@ -1,17 +1,17 @@
-import diamond from '../../public/img/work/diamond.jpg'
-import brand from '../../public/img/work//brand.png'
+import work1 from "../../public/img/work/work1.png";
+import work2 from '../../public/img/work//work2.jpg'
 
 export const workdata = [
   {
     id: 1,
-    img: diamond,
+    img: work1,
     title: "Heading 1",
     desq: "description",
     date: "20.05.24",
   },
   {
     id: 2,
-    img: brand,
+    img: work2,
     title: "Heading 2",
     desq: "description",
     date: "20.05.24",
