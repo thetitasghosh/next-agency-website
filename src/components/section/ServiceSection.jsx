@@ -1,6 +1,6 @@
 import React from "react";
 import { service } from "@/data/serviceData";
-import Card from "@/components/ui/card";
+import ServiceCard from "@/components/ui/ServiceCard";
 const ServiceSection = () => {
   return (
     <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-10 overflow-hidden p-2 pt-20">
@@ -9,7 +9,7 @@ const ServiceSection = () => {
       </div>
       <div className="flex min-h-screen flex-col items-center justify-center gap-5">
         {service.map((serve, idx) => {
-          return <Card key={idx} data={serve} />;
+          return <ServiceCard key={idx} data={serve} />;
         })}
       </div>
     </div>

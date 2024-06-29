@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "./button";
 import Link from "next/link";
 
-const card = ({ data }) => {
+const ServiceCard = ({ data }) => {
   return (
     <div className="flex h-96 w-80 flex-col items-center justify-start gap-4 rounded-md p-2 shadow-md shadow-slate-500">
       <div className="flex w-full items-center justify-center rounded-md">
@@ -19,8 +19,8 @@ const card = ({ data }) => {
         <h1>{data.price}</h1>
       </div>
       <div className="flex w-full items-center justify-evenly">
-        <Link href={'#contactpage'} >
-          <Button className="bg-clickBlue">Enquiry</Button>
+        <Link href={"#contactpage"}>
+          <Button className="bg-Blue">Enquiry</Button>
         </Link>
         <Button variant={"destructive"}>Buy now</Button>
       </div>
@@ -28,4 +28,4 @@ const card = ({ data }) => {
   );
 };
 
-export default card;
+export default ServiceCard;
