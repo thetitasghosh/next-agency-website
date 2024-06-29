@@ -75,7 +75,9 @@ const HeroSection = () => {
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
             <Button className="flex gap-1 border bg-Blue text-white">
-              save to contacts <PiDownloadFill />
+              <Link>
+                save to contacts <PiDownloadFill />
+              </Link>
             </Button>
           </div>
           <div className="h-10 w-20">
