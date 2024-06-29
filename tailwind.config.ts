@@ -27,7 +27,11 @@ const config = {
     },
     extend: {
       colors: {
-        clickBlue :'#194EE0',
+        // custome color variables
+        Blue :'#194EE0',
+
+
+        //some default color
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
