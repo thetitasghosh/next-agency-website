@@ -17,7 +17,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { socialIcon } from "@/data/navigation";
-import WpShare from "@/components/ui/WpShare";
+import WhatsAppShare from "@/components/ui/WhatsAppShare";
 import Link from "next/link";
 import Image from "next/image";
 const HeroSection = () => {
@@ -69,7 +69,7 @@ const HeroSection = () => {
         </div>
         {/* //TODO:  wp_share_input */}
         <div className="wp_share_input flex h-14 w-96 items-center justify-center rounded-md p-2">
-          <WpShare />
+          <WhatsAppShare />
         </div>
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
