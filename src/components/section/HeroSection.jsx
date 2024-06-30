@@ -54,17 +54,17 @@ const HeroSection = () => {
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <FaPhone className="size-5" /> |<Link href={""}> {phone1} </Link>
+            <FaPhone className="size-5" /> |<Link href={"/"}> {phone1} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <FaPhone className="size-5" /> |<Link href={""}> {phone2} </Link>
+            <FaPhone className="size-5" /> |<Link href={"/"}> {phone2} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <MdEmail className="size-5" /> |<Link href={""}> {email} </Link>
+            <MdEmail className="size-5" /> |<Link href={"/"}> {email} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
             <FaLocationDot className="size-5" /> |
-            <Link href={""}> {location} </Link>
+            <Link href={"/"}> {location} </Link>
           </div>
         </div>
         {/* //TODO:  wp_share_input */}
@@ -74,11 +74,11 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
-            <Button className="flex gap-1 border bg-Blue text-white">
-              <Link>
+            <Link href={""}>
+              <Button className="flex gap-1 border bg-Blue text-white">
                 save to contacts <PiDownloadFill />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
           <div className="h-10 w-20">
             <DialogBox>
