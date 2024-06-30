@@ -28,6 +28,7 @@ const config = {
       colors: {
         // custome color variables
         Blue: "#194EE0",
+        Green: "#16a34a",
 
         //some default color
         border: "hsl(var(--border))",
