@@ -60,7 +60,7 @@ const HeroSection = () => {
             <FaPhone className="size-5" /> |<Link href={"/"}> {phone2} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <MdEmail className="size-5" /> |<Link href={"/"}> {email} </Link>
+            <MdEmail className="size-5" /> |<Link href={''}> {email} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
             <FaLocationDot className="size-5" /> |

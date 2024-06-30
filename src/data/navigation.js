@@ -42,12 +42,24 @@ export const navigation = [
 ];
 
 //TODO: create link to href individualy
+const whatsappNumber = 916296328842;
+const whatsappMessage = 'Hi,Titas Ghosh'
 export const socialIcon = [
   { id: 1, href: "/", lable: "phone", icon: <FaPhone /> },
-  { id: 2, href: "/", lable: "whatsapp", icon: <FaWhatsapp /> },
+  {
+    id: 2,
+    href: `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`,
+    lable: "whatsapp",
+    icon: <FaWhatsapp />,
+  },
   { id: 3, href: "/", lable: "location", icon: <FaLocationDot /> },
-  { id: 4, href: "/", lable: "email", icon: <MdEmail /> },
-  { id: 5, href: "/", lable: "website", icon: <FaEarthAsia /> },
+  { id: 4, href: "mailto:info.titasghosh@gmail.com", lable: "email", icon: <MdEmail /> },
+  {
+    id: 5,
+    href: "/",
+    lable: "website",
+    icon: <FaEarthAsia />,
+  },
 ];
 
 import { FaWhatsappSquare } from "react-icons/fa";
