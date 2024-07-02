@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const WorkCard = ({ data }) => {
+const workCard = ({ data }) => {
   const { img, title, desq, date } = data;
   return (
     <div className="black flex h-96 w-80 flex-col items-center justify-start gap-2 rounded-md p-2 shadow-md shadow-slate-500">
@@ -27,4 +27,4 @@ const WorkCard = ({ data }) => {
   );
 };
 
-export default WorkCard;
+export default workCard;
