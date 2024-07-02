@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import workCard from "@/components/ui/workCard";
+import WorkCard from "@/components/ui/workCard";
 const WorkSection = () => {
   const [wApi, setWApi] = useState();
   const [current, setCurrent] = useState(0);
@@ -51,7 +51,7 @@ const WorkSection = () => {
                   key={idx}
                   className="flex items-center justify-center"
                 >
-                  <workCard data={data} />
+                  <WorkCard data={data} />
                 </CarouselItem>
               );
             })}
