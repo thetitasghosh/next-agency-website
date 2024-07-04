@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./dialog";
+import Link from "next/link";
 const DialogBox = ({ children }) => {
   return (
     <Dialog>
@@ -23,7 +24,9 @@ const DialogBox = ({ children }) => {
             {ShareOptions.map((data, idx) => {
               return (
                 <div key={idx} className="size-10 cursor-pointer">
-                  <div>{data.icon}</div>
+                  <Link href={data.url} target="_blank">
+                    <div>{data.icon}</div>
+                  </Link>
                   {/* <p className="text-xs">{data.label}</p> */}
                 </div>
               );
@@ -31,7 +34,9 @@ const DialogBox = ({ children }) => {
           </div>
         </div>
         <DialogFooter>
-          <DialogClose className="border p-1 border-black rounded-lg">close</DialogClose>
+          <DialogClose className="rounded-lg border border-black p-1">
+            close
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>

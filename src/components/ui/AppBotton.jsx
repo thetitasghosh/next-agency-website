@@ -4,7 +4,7 @@ import Link from "next/link";
 const MBotton = () => {
   return (
     <div className="fixed bottom-2 flex w-full justify-center">
-      <div className="flex h-20 w-[370px] items-center justify-evenly rounded-md border  bg-Green py-8 ">
+      <div className="flex h-20 w-[370px] items-center justify-evenly rounded-md bg-background/70 bg-gradient-to-r from-Green to-green-500 py-8 backdrop-blur-md">
         {navigation.map((data, idx) => {
           return <NavButton key={idx} data={data} />;
         })}

@@ -43,7 +43,7 @@ export const navigation = [
 
 //TODO: create link to href individualy
 const whatsappNumber = 916296328842;
-const whatsappMessage = 'Hi,Titas Ghosh'
+const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
   { id: 1, href: "/", lable: "phone", icon: <FaPhone /> },
   {
@@ -53,7 +53,12 @@ export const socialIcon = [
     icon: <FaWhatsapp />,
   },
   { id: 3, href: "/", lable: "location", icon: <FaLocationDot /> },
-  { id: 4, href: "mailto:info.titasghosh@gmail.com", lable: "email", icon: <MdEmail /> },
+  {
+    id: 4,
+    href: "mailto:info.titasghosh@gmail.com",
+    lable: "email",
+    icon: <MdEmail />,
+  },
   {
     id: 5,
     href: "/",
@@ -69,26 +74,32 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
+const DEFAULT_URL = "https://ngt-agency-website.vercel.app/";
 export const ShareOptions = [
   {
     id: 1,
     label: "WhatsApp",
     icon: <FaWhatsappSquare className="size-full rounded text-green-500" />,
-    url: "",
+    url: `https://api.whatsapp.com/send?text=${DEFAULT_URL}`,
   },
   {
     id: 2,
     label: "SMS",
     icon: <FaSms className="size-full text-red-500" />,
-    url: "",
+    url: `sms:?body=${DEFAULT_URL}`,
   },
   {
     id: 3,
     label: "Facebook",
     icon: <FaFacebookSquare className="size-full text-blue-500" />,
-    url: "",
+    url: `https://www.facebook.com/sharer/sharer.php?u=${DEFAULT_URL}`,
   },
-  { id: 4, label: "X", icon: <FaXTwitter className="size-full" />, url: "" },
+  {
+    id: 4,
+    label: "X",
+    icon: <FaXTwitter className="size-full" />,
+    url: `https://twitter.com/intent/tweet?text=${DEFAULT_URL}`,
+  },
   {
     id: 5,
     label: "Instragram",
@@ -99,6 +110,6 @@ export const ShareOptions = [
     id: 6,
     label: "LinkedIn",
     icon: <FaLinkedin className="size-full text-blue-700" />,
-    url: "",
+    url: `https://www.linkedin.com/cws/share?url=${DEFAULT_URL}`,
   },
 ];

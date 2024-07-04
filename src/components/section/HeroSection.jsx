@@ -60,7 +60,7 @@ const HeroSection = () => {
             <FaPhone className="size-5" /> |<Link href={"/"}> {phone2} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <MdEmail className="size-5" /> |<Link href={''}> {email} </Link>
+            <MdEmail className="size-5" /> |<Link href={""}> {email} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
             <FaLocationDot className="size-5" /> |
@@ -74,7 +74,7 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
-            <Link href={""}>
+            <Link href={""} download={"/file/test.txt"}>
               <Button className="flex gap-1 border bg-Blue text-white">
                 save to contacts <PiDownloadFill />
               </Button>
