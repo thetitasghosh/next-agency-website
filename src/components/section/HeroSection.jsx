@@ -53,7 +53,7 @@ const HeroSection = () => {
           })}
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
+          {/* <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
             <FaPhone className="size-5" /> |<Link href={"/"}> {phone1} </Link>
           </div>
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
@@ -65,8 +65,8 @@ const HeroSection = () => {
           <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
             <FaLocationDot className="size-5" /> |
             <Link href={"/"}> {location} </Link>
-          </div>
-          {/* {ContactTile.map((data, idx) => {
+          </div> */}
+          {ContactTile.map((data, idx) => {
             return (
               <div
                 key={idx}
@@ -75,7 +75,7 @@ const HeroSection = () => {
                 {data.icon} |<Link href={data.url}>{data.contact}</Link>
               </div>
             );
-          })} */}
+          })}
         </div>
         {/* //TODO:  wp_share_input */}
         <div className="wp_share_input flex h-14 w-96 items-center justify-center rounded-md p-2">
