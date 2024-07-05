@@ -27,6 +27,7 @@ const config = {
     extend: {
       colors: {
         // custome color variables
+        SwicthTheme: "",
         Blue: "#194EE0",
         Green: "#16a34a",
 

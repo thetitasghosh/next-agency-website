@@ -14,8 +14,10 @@ const ContactSection = () => {
 
   return (
     <div className="flex h-[35rem] w-[400px] flex-col items-center justify-start overflow-hidden p-2">
-      <div className="relative w-full px-2">
-        <h1 className="border_bottom text-2xl font-medium">Contact Us</h1>
+      <div className="relative w-full">
+        <h1 className="border_bottom red rounded p-2 text-2xl font-medium">
+          Contact Us
+        </h1>
       </div>
       <div className="flex h-fit w-full flex-col items-center justify-center gap-3 p-20 px-5 text-black">
         <Label htmlFor="name" className="w-full px-1 text-black">
