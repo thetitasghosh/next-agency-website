@@ -9,6 +9,9 @@ import { useToast } from "@/lib/use-toast";
 const ContactSection = () => {
   const { toast } = useToast();
   const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+
   return (
     <div className="flex h-[35rem] w-[400px] flex-col items-center justify-start overflow-hidden p-2">
       <div className="relative w-full px-2">
@@ -32,6 +35,8 @@ const ContactSection = () => {
         <Input
           type="email"
           id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Your Email"
           className="border border-black"
         />
@@ -41,6 +46,8 @@ const ContactSection = () => {
         <Textarea
           placeholder="Type your message here."
           id="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           className="border border-black"
         />
         <Button
