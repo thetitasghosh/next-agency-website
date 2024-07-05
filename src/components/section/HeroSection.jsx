@@ -16,14 +16,14 @@ import DialogBox from "@/components/ui/DialogBox";
 import { FaPhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { socialIcon } from "@/data/navigation";
+import { socialIcon, ContactTile } from "@/data/navigation";
 import WhatsAppShare from "@/components/ui/WhatsAppShare";
 import Link from "next/link";
 import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
+      <div className=" flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
@@ -66,6 +66,16 @@ const HeroSection = () => {
             <FaLocationDot className="size-5" /> |
             <Link href={"/"}> {location} </Link>
           </div>
+          {/* {ContactTile.map((data, idx) => {
+            return (
+              <div
+                key={idx}
+                className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5"
+              >
+                {data.icon} |<Link href={data.url}>{data.contact}</Link>
+              </div>
+            );
+          })} */}
         </div>
         {/* //TODO:  wp_share_input */}
         <div className="wp_share_input flex h-14 w-96 items-center justify-center rounded-md p-2">

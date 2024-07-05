@@ -5,31 +5,25 @@ import ServiceSection from "@/components/section/ServiceSection";
 import WorkSection from "@/components/section/WorkSection";
 import ContactSection from "@/components/section/ContactSection";
 import AppButton from "@/components/ui/AppBotton";
-import { useEffect, useRef } from "react";
-export default function Home() {
-  const about = useRef(null);
-  const home = useRef(null);
-  const work = useRef(null);
-  const contact = useRef(null);
-  const service = useRef(null);
 
+export default function Home() {
   return (
     <main className="flex min-h-full w-full items-center justify-center bg-black">
-      <div className="flex h-full w-[400px] flex-col items-center justify-center overflow-hidden bg-white">
+      <div className="MainPage flex h-full w-[400px] flex-col items-center justify-center overflow-hidden bg-white">
         {/* <Header /> */}
-        <div ref={home} id="homepage">
+        <div id="homepage">
           <HeroSection />
         </div>
-        <div ref={about} id="aboutpage" >
+        <div id="aboutpage">
           <AboutSection />
         </div>
-        <div ref={service} id="servicepage">
+        <div id="servicepage">
           <ServiceSection />
         </div>
-        <div ref={work} id="workpage">
+        <div id="workpage">
           <WorkSection />
         </div>
-        <div ref={contact} id="contactpage">
+        <div id="contactpage">
           <ContactSection />
         </div>
         {/* <Menubutton /> */}
