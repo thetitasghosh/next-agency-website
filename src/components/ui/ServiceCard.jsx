@@ -23,7 +23,7 @@ const ServiceCard = ({ data }) => {
           <Button className="bg-Blue">Enquiry</Button>
         </Link>
         <Link href={""}>
-          <Button variant={"destructive"}>Buy now</Button>
+          <Button className="bg-Green">Buy now</Button>
         </Link>
       </div>
     </div>
