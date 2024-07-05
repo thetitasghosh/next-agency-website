@@ -74,7 +74,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
-const DEFAULT_URL = "https://ngt-agency-website.vercel.app/";
+export const DEFAULT_URL = "https://ngt-agency-website.vercel.app/";
 export const ShareOptions = [
   {
     id: 1,
@@ -111,5 +111,21 @@ export const ShareOptions = [
     label: "LinkedIn",
     icon: <FaLinkedin className="size-full text-blue-700" />,
     url: `https://www.linkedin.com/cws/share?url=${DEFAULT_URL}`,
+  },
+];
+
+const number_1 = "6296328842";
+const number_2 = "6296328842";
+const email = "info@ngtsoftware.com";
+const location = "location,via";
+export const ContactTile = [
+  { id: 1, icon: <FaPhone className="size-5" />, contact: number_1, url: "" },
+  { id: 2, icon: <FaPhone className="size-5" />, contact: number_2, url: "" },
+  { id: 3, icon: <MdEmail className="size-5" />, contact: email, url: "" },
+  {
+    id: 4,
+    icon: <FaLocationDot className="size-5" />,
+    contact: location,
+    url: "",
   },
 ];
