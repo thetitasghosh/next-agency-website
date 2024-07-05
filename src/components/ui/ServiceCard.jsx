@@ -22,7 +22,9 @@ const ServiceCard = ({ data }) => {
         <Link href={"#contactpage"}>
           <Button className="bg-Blue">Enquiry</Button>
         </Link>
-        <Button variant={"destructive"}>Buy now</Button>
+        <Link href={""}>
+          <Button variant={"destructive"}>Buy now</Button>
+        </Link>
       </div>
     </div>
   );

@@ -101,3 +101,13 @@ body {
   position: absolute;
   border-bottom: 1px solid black;
 }
+
+/* Media Quries */
+@media screen and (max-width: 428px) {
+  .MainPage {
+    width: -webkit-fill-available;
+  }
+  .Header {
+    width: -webkit-fill-available;
+  }
+}
