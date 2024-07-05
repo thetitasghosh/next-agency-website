@@ -15,7 +15,7 @@ const ContactSection = () => {
   return (
     <div className="flex h-[35rem] w-[400px] flex-col items-center justify-start overflow-hidden p-2">
       <div className="relative w-full">
-        <h1 className="border_bottom red rounded p-2 text-2xl font-medium">
+        <h1 className="border_bottom rounded bg-gradient-to-r from-blue-700 to-blue-400 p-2 text-2xl font-medium text-white">
           Contact Us
         </h1>
       </div>

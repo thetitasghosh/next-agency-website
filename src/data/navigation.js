@@ -41,10 +41,11 @@ export const navigation = [
   },
 ];
 
-//TODO: create link to href individualy
+//TODO create link to href individualy
 const whatsappNumber = 916296328842;
 const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
+  // FIXME: add tel: link
   { id: 1, href: "/", lable: "phone", icon: <FaPhone /> },
   {
     id: 2,

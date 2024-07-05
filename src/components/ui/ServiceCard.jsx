@@ -22,7 +22,10 @@ const ServiceCard = ({ data }) => {
         <Link href={"#contactpage"}>
           <Button className="bg-Blue">Enquiry</Button>
         </Link>
-        <Link href={""}>
+
+        {/* `https://api.whatsapp.com/send?phone=${number}&text=${DEFAULT_URL}` //TODO: add this link */}
+        <Link href={"/"}>
+          {/* //TODO: add whatsapp link to buy now clicking */}
           <Button className="bg-Green">Buy now</Button>
         </Link>
       </div>
