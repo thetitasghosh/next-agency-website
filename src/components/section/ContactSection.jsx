@@ -47,7 +47,7 @@ const ContactSection = () => {
           onClick={() => {
             toast({
               title: "Welcome",
-              description: name || "test ",
+              description: name,
             });
           }}
           className="w-full bg-Blue"
