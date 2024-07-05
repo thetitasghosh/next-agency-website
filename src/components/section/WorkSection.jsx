@@ -33,8 +33,8 @@ const WorkSection = () => {
 
   return (
     <div className="flex h-[40rem] w-[400px] flex-col items-center justify-start gap-2 overflow-hidden p-5 pt-20">
-      <div className="relative h-16 w-full ">
-        <h1 className="border_bottom red rounded p-2 text-2xl font-medium">
+      <div className="relative h-16 w-full">
+        <h1 className="border_bottom rounded bg-gradient-to-r from-blue-700 to-blue-400 p-2 text-2xl font-medium text-white">
           Works
         </h1>
       </div>
