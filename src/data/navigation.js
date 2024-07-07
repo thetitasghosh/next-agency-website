@@ -8,6 +8,15 @@ import { CgProfile } from "react-icons/cg";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaSms } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+
+
+// website navigation for diff section jumps ↓
 export const navigation = [
   {
     id: 1,
@@ -41,8 +50,11 @@ export const navigation = [
   },
 ];
 
+
+// hero section contact ring for contact ↓
+
 //TODO create link to href individualy
-const whatsappNumber = 916296328842;
+export const whatsappNumber = 916296328842;
 const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
   // FIXME: add tel: link
@@ -68,12 +80,7 @@ export const socialIcon = [
   },
 ];
 
-import { FaWhatsappSquare } from "react-icons/fa";
-import { FaSms } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+// hero section share option on diff social media ↓
 
 export const DEFAULT_URL = "https://ngt-agency-website.vercel.app/";
 export const ShareOptions = [
@@ -114,6 +121,9 @@ export const ShareOptions = [
     url: `https://www.linkedin.com/cws/share?url=${DEFAULT_URL}`,
   },
 ];
+
+
+// hero section contact tile ↓
 
 const number_1 = "6296328842";
 const number_2 = "6296328842";
