@@ -1,5 +1,5 @@
-import work1 from "../../public/img/work/work1.png";
-import work2 from '../../public/img/work//work2.jpg'
+import work1 from "../../public/img/work/work1.webp";
+import work2 from '../../public/img/work//work2.webp'
 
 export const workdata = [
   {
