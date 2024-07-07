@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
+import { DEFAULT_URL, whatsappNumber } from "@/data/navigation";
 import Link from "next/link";
 
 const ServiceCard = ({ data }) => {
@@ -23,9 +24,10 @@ const ServiceCard = ({ data }) => {
           <Button className="bg-Blue">Enquiry</Button>
         </Link>
 
-        {/* `https://api.whatsapp.com/send?phone=${number}&text=${DEFAULT_URL}` //TODO: add this link */}
-        <Link href={"/"}>
-          {/* //TODO: add whatsapp link to buy now clicking */}
+        <Link
+          target="_blank"
+          href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=I want this  ${data.service} service `}
+        >
           <Button className="bg-Green">Buy now</Button>
         </Link>
       </div>
