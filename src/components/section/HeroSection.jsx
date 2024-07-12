@@ -23,7 +23,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
+      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
@@ -72,7 +72,7 @@ const HeroSection = () => {
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
             <a href={"/file/test.txt"} download={"/file/test.txt"}>
-              <Button className="flex gap-1 border bg-Blue text-white">
+              <Button className="flex gap-1 bg-Blue text-white">
                 save to contacts <PiDownloadFill />
               </Button>
             </a>
