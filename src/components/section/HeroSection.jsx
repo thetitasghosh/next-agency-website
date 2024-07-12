@@ -71,11 +71,11 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
-            <Link href={""} download={"/file/test.txt"}>
+            <a href={"/file/test.txt"} download={"/file/test.txt"}>
               <Button className="flex gap-1 border bg-Blue text-white">
                 save to contacts <PiDownloadFill />
               </Button>
-            </Link>
+            </a>
           </div>
           <div className="h-10 w-20">
             <DialogBox>
