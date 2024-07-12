@@ -23,7 +23,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <>
-      <div className=" flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
+      <div className="flex min-h-screen w-[400px] flex-col items-center justify-start gap-2 overflow-hidden py-14">
         <Abutton />
         <div className="hero-logo flex h-40 w-full items-center justify-evenly gap-2 px-3">
           <div className="flex size-32 items-center justify-center rounded-xl border">
@@ -32,6 +32,7 @@ const HeroSection = () => {
               className="rounded-xl"
               width={120}
               alt="NGT-SOFTWARE logo"
+              priority
             />
           </div>
           <div className="flex flex-col items-start justify-evenly">
@@ -53,19 +54,6 @@ const HeroSection = () => {
           })}
         </div>
         <div className="flex h-52 w-full flex-col items-center justify-center gap-3 text-sm text-white">
-          {/* <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <FaPhone className="size-5" /> |<Link href={"/"}> {phone1} </Link>
-          </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <FaPhone className="size-5" /> |<Link href={"/"}> {phone2} </Link>
-          </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <MdEmail className="size-5" /> |<Link href={""}> {email} </Link>
-          </div>
-          <div className="flex h-10 w-60 items-center justify-start gap-3 rounded-lg bg-Blue px-5">
-            <FaLocationDot className="size-5" /> |
-            <Link href={"/"}> {location} </Link>
-          </div> */}
           {ContactTile.map((data, idx) => {
             return (
               <div
@@ -77,7 +65,6 @@ const HeroSection = () => {
             );
           })}
         </div>
-        {/* //TODO:  wp_share_input */}
         <div className="wp_share_input flex h-14 w-96 items-center justify-center rounded-md p-2">
           <WhatsAppShare />
         </div>

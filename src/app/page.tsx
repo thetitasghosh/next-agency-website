@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main className="flex min-h-full w-full items-center justify-center bg-black">
       <div className="MainPage flex h-full w-[400px] flex-col items-center justify-center overflow-hidden bg-white">
-        {/* <Header /> */}
         <div id="homepage">
           <HeroSection />
         </div>
@@ -26,7 +25,6 @@ export default function Home() {
         <div id="contactpage">
           <ContactSection />
         </div>
-        {/* <Menubutton /> */}
         <AppButton />
       </div>
     </main>
