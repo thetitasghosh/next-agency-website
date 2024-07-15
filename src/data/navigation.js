@@ -53,6 +53,7 @@ export const navigation = [
 
 //TODO create link to href individualy
 const Number = 6296328842;
+const Website = "";
 export const whatsappNumber = 916296328842;
 const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
@@ -73,7 +74,7 @@ export const socialIcon = [
   },
   {
     id: 5,
-    href: "/",
+    href: `${Website}`,
     lable: "website",
     icon: <FaEarthAsia />,
   },
