@@ -51,13 +51,11 @@ export const navigation = [
 
 // hero section contact ring for contact ↓
 
-//TODO create link to href individualy
 const Number = 6296328842;
 const Website = "";
 export const whatsappNumber = 916296328842;
 const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
-  // FIXME: add tel: link
   { id: 1, href: `tel:+91${Number}`, lable: "phone", icon: <FaPhone /> },
   {
     id: 2,
@@ -81,7 +79,6 @@ export const socialIcon = [
 ];
 
 // hero section share option on diff social media ↓
-
 export const DEFAULT_URL = "https://ngt-agency-website.vercel.app/";
 export const ShareOptions = [
   {
