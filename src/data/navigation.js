@@ -15,7 +15,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
-
 // website navigation for diff section jumps ↓
 export const navigation = [
   {
@@ -50,15 +49,15 @@ export const navigation = [
   },
 ];
 
-
 // hero section contact ring for contact ↓
 
 //TODO create link to href individualy
+const Number = 6296328842;
 export const whatsappNumber = 916296328842;
 const whatsappMessage = "Hi,Titas Ghosh";
 export const socialIcon = [
   // FIXME: add tel: link
-  { id: 1, href: "/", lable: "phone", icon: <FaPhone /> },
+  { id: 1, href: `tel:+91${Number}`, lable: "phone", icon: <FaPhone /> },
   {
     id: 2,
     href: `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`,
@@ -121,7 +120,6 @@ export const ShareOptions = [
     url: `https://www.linkedin.com/cws/share?url=${DEFAULT_URL}`,
   },
 ];
-
 
 // hero section contact tile ↓
 
