@@ -6,8 +6,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import WorkCard from "@/components/ui/workCard";
 const WorkSection = () => {
@@ -58,8 +56,6 @@ const WorkSection = () => {
               );
             })}
           </CarouselContent>
-          {/* <CarouselPrevious /> */}
-          {/* <CarouselNext  /> */}
         </Carousel>
       </div>
       <div className="flex h-10 w-full justify-center">

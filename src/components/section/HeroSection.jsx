@@ -71,6 +71,7 @@ const HeroSection = () => {
 
         <div className="wp_share_input flex h-10 w-96 items-center justify-center gap-2">
           <div className="">
+            {/* you need change here 📌 ↓ "/file/FileName.txt,pdf, etc" */}
             <a href={"/file/test.txt"} download={"/file/test.txt"}>
               <Button className="flex gap-1 bg-Blue text-white">
                 save to contacts <PiDownloadFill />

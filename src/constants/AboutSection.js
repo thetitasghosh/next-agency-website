@@ -1,1 +1,0 @@
-export const  ABOUT_SECTION_DESQCRIPTON_PARA = ''

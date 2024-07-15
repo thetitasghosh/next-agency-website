@@ -1,0 +1,12 @@
+ 📌 if you want add file you need to change ↓
+
+ href={"/file/{fileName.txt,pdf,docs,etc}"} download={"/file/{fileName.txt,pdf,docs,etc}"}
+ 
+ To change you need to Go here => "/components/section/HeroSection.jsx" => also commented
+
+
+ <a href={"/file/test.txt"} download={"/file/test.txt"}>
+     <Button className="flex gap-1 bg-Blue text-white">
+       save to contacts <PiDownloadFill />
+     </Button>
+ </a>
